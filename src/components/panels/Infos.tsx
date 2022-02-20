@@ -18,10 +18,10 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
         <div>
           Guess the <Worldle /> in 6 guesses.
         </div>
-        <div>Each guess must be a valid country, territory, ...</div>
+        <div>Each guess must be a valid UK Local Authority.</div>
         <div>
           After each guess, you will have the distance, the direction and the
-          proximity from your guess and the target country.
+          proximity from your guess and the target area.
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
@@ -41,9 +41,8 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           <div className="my-2">
             Your guess <span className="uppercase font-bold">Chile</span> is{" "}
             {formatDistance(13557000, settingsData.distanceUnit)} away from the
-            target country, the target country is in the North-East direction
-            and you have a only 32% of proximity because it&apos;s quite far
-            away!
+            target area, the target area is in the North-East direction and you
+            have a only 32% of proximity because it&apos;s quite far away!
           </div>
         </div>
         <div>
@@ -79,7 +78,7 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           />
           <div className="my-2">
             Next guess, <span className="uppercase font-bold">Lebanon</span>,
-            it&apos;s the country to guess! Congrats! 🎉
+            it&apos;s the area to guess! Congrats! 🎉
           </div>
         </div>
       </div>
@@ -99,8 +98,24 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
         </div>
       </div>
       <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
-        <Worldle /> has been <span className="font-bold">heavily</span> inspired
-        by{" "}
+        <div className="font-bold">About the data</div>
+        <div>
+          Source: Office for National Statistics licensed under the Open
+          Government Licence v 3.0.0.
+        </div>
+        <div>Contains OS data © Crown copyright and database right [2022]</div>
+      </div>
+      <div className="space-y-3 text-justify border-b-2 border-gray-200 pb-3 mb-3">
+        <Worldle /> has been created using the open source code of&nbsp;
+        <a
+          className="underline"
+          href="https://www.powerlanguage.co.uk/wordle/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Worldle
+        </a>
+        , itself <span className="font-bold">heavily</span> inspired by{" "}
         <a
           className="underline"
           href="https://www.powerlanguage.co.uk/wordle/"
@@ -125,6 +140,15 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
           Made by{" "}
           <a
             className="underline"
+            href="https://puntofisso.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @puntofisso
+          </a>
+          &nbsp;using open source code by&nbsp;
+          <a
+            className="underline"
             href="https://twitter.com/teuteuf"
             target="_blank"
             rel="noopener noreferrer"
@@ -140,7 +164,15 @@ export function Infos({ isOpen, close, settingsData }: InfosProps) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Buy me a coffee! ☕
+            Buy @teteuf a coffee! ☕
+          </a>
+          <a
+            className="underline pl-1"
+            href="https://www.buymeacoffee.com/puntofisso"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            or get me one to cover server costs
           </a>
         </div>
       </div>

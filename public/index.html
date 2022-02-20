@@ -24,10 +24,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Worldle</title>
+    <title>Wardle</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="cookies-eu-banner" style="display: none;">
+      By continuing to visit this site, you accept the use of cookies by Google Analytics for statistical purposes.
+      <a href="./read-more.html" id="cookies-eu-more">Read more</a>
+      <button id="cookies-eu-reject">Reject</button>
+      <button id="cookies-eu-accept">Accept</button>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +45,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.jsdelivr.net/npm/cookies-eu-banner@2.0.1/dist/cookies-eu-banner.js"></script>
+    <!--Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MHMW91H6L0"></script>
+    <script>
+    new CookiesEuBanner(function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MHMW91H6L0');
+    });
+    </script>
   </body>
 </html>

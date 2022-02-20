@@ -2,10 +2,12 @@ import { useMemo } from "react";
 import seedrandom from "seedrandom";
 import { countriesWithImage, Country } from "../domain/countries";
 
-const forcedCountries: Record<string, string> = {
-  "2022-02-02": "TD",
-  "2022-02-03": "PY",
-};
+// const forcedCountries: Record<string, string> = {
+//   "2022-02-02": "TD",
+//   "2022-02-03": "PY",
+// };
+
+const forcedCountries: Record<string, string> = {};
 
 export function useCountry(dayString: string): [Country, number, number] {
   const country = useMemo(() => {

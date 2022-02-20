@@ -72,7 +72,7 @@ function App() {
               ❔
             </button>
             <h1 className="text-4xl font-bold uppercase tracking-wide text-center my-1 flex-auto">
-              Wor<span className="text-green-600">l</span>dle
+              <span className="text-green-600">Ward</span>le
             </h1>
             <button
               className="ml-3 text-xl"
@@ -91,14 +91,30 @@ function App() {
           </header>
           <Game settingsData={settingsData} />
           <footer className="flex justify-center text-sm mt-8 mb-1">
-            ❤️ <Worldle />? -
+            ❤️ <Worldle />?
             <a
               className="underline pl-1"
               href="https://www.ko-fi.com/teuteuf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t("buyMeACoffee")}
+              {t("buy Teuteuf a coffee")}
+            </a>
+            <a
+              className="underline pl-1"
+              href="https://www.buymeacoffee.com/puntofisso"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("get me a coffee to cover server costs")}
+            </a>
+            <a
+              className="underline pl-1"
+              href="http://puntofisso.net/wardleprivacy.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("Privacy Policy")}
             </a>
           </footer>
         </div>

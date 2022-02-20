@@ -117,7 +117,11 @@ export function Game({ settingsData }: GameProps) {
             hideImageMode && !gameEnded ? "h-0" : "h-full"
           }`}
           alt="country to guess"
-          src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
+          // original: src={`images/countries/${country.code.toLowerCase()}/vector.svg`}
+          // councils: src={`images/councils-svg/${country.code.toLowerCase()}.svg`}
+          // wards: src={`images/councils-svg/${country.code}.svg`}
+          // constituencies: src={`images/constituencies-svg/${country.code}.svg`}
+          src={`images/councils-svg/${country.code}.svg`}
           style={
             rotationMode && !gameEnded
               ? {
